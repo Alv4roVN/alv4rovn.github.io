@@ -6,8 +6,132 @@
         <title>Álvaro Vilela Nova</title>
     </head>
     <body>
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar">
+            <!-- YODA: Add logo image -->
+            <img src="" class="logo" alt="Logo de la página" />
+            <ul>
+                <li class="nav-item" ><a href="#aboutMe">Sobre mí</a></li>
+                <li class="nav-item dropdown"><a href="#stack">Habilidades</a></li>
+                <li class="nav-item"><a href="#projects">Proyectos</a></li>
+                <li class="nav-item"><a href="pages/contact.html">Contacta</a></li>
+            </ul>
+            <!-- YODA: Write changeLanguage -->
+            <button class="language-button" onclick="changeLanguage('es')">Español</button>
+            <button class="language-button" onclick="changeLanguage('en')">English</button>
+        </nav>
+        <!-- HEADER OF THE PAGE - Should be an introduction -->
         <header>
-            
+            <h1 class="welcome">BIENVENIDO A MI PÁGINA WEB PERSONAL</h1>
         </header>
+        <!-- MAIN CONTENT OF THE WEBSITE -->
+        <main>
+            <!-- ABOUT ME -->
+            <section id="aboutMe">
+                <!-- YODA: Add profile pic -->
+                <img class="profile-pic" src="" alt="Foto de perfil" />
+                <h2 class="header-about-me">Sobre mí.</h2>
+                <p class="about-me-desc">Soy un matemático completando un Máster en Big Data, Data Science & IA en Madrid. Tengo interés en las nuevas tecnologías y siempre intento aprender por mi cuenta —por ejemplo, aprender a hacer esta página. Amante de los juegos de estrategia y todas las cosas frikis que puedas imaginarte.</p>
+                <!-- YODA: Add logos and correct links -->
+                <div class="social">
+                    <a href="" class="social-link"><img class="social-icon" src="" alt="Logo de GitHub" /></a>
+                    <a href="" class="social-link"><img class="social-icon" src="" alt="Logo de LinkedIn" /></a>
+                    <a href="" class="social-link"><img class="social-icon" src="" alt="Logo de Codecademy" /></a>
+                    <a href="" class="download-link"><img class="download-icon" src="" alt="Logo descarga CV inglés" /></a>
+                    <a href="" class="download-link"><img class="download-icon" src="" alt="Logo descarga CV español" /></a>
+                </div>
+            </section>
+            <!-- HARD SKILLS -->
+            <section id="stack">
+                <!-- EDUCATION -->
+                <div id="education">
+                    <h2 class="header-education">Formación.</h2>
+                    <div class="cards-education">
+                        <!-- YODA: Add uni logos -->
+                        <div class="card-ed">
+                            <h3 class="card-header-ed"><img class="logo-uni" src="" alt="Logo de la UEx">Universidad de Extremadura</h3>
+                            <h4 class="university">Grado en Matemáticas</h4>
+                            <h4 class="duration">Sep 2018 - Jun 2024</h4>
+                            <span class="card-content-ed">Formación en matemáticas puras con optativas orientadas a la estadística, machine learning y análisis de datos.</span>
+                        </div>
+                        <div class="card-ed">
+                            <h3 class="card-header-ed"><img class="logo-uni" src="" alt="Logo de la UCM">Universidad Complutense de Madrid</h3>
+                            <h4 class="university">Máster en Big Data, Data Science & IA</h4>
+                            <h4 class="duration">Oct 2023 - Sep 2024</h4>
+                            <span class="card-content-ed">Formación y proyectos relacionados en ingeniería de datos, explotación y exploración de datos y creación de modelos de machine learning e inteligencia artificial.</span>
+                        </div>
+                        <div class="card-ed">
+                            <h3 class="card-header-ed"><img class="logo-uni" src="" alt="Logo de la UZG">Universidad de Zielona Góra</h3>
+                            <h4 class="university">Grado en Matemáticas</h4>
+                            <h4 class="duration">Sep 2020- Jun 2021</h4>
+                            <span class="card-content-ed">Beca Erasmus+ de 10 meses de educación e inmersión cultural en Polonia con compañeros de diversos trasfondos culturales.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- TECH SKILLS -->
+                <div id="tech">
+                    <h2 class="header-tech">Habilidades técnicas.</h2>
+                    <div class="cards-tech">
+                        <div class="card-t">
+                            <h3 class="card-header-t">Lenguajes</h3>
+                            <ul class="languages">
+                                <li class="language">Python</li>
+                                <li class="language">Javascript</li>
+                                <li class="language">R</li>
+                                <li class="language">MATLAB / GNU Octave</li>
+                                <li class="language">Fortran</li>
+                                <li class="language">HTML</li>
+                                <li class="language">CSS</li>
+                            </ul>
+                        </div>
+                        <div class="card-t">
+                            <h3 class="card-header-t">Herramientas</h3>
+                            <h4 class="card-subheader-t">IDEs</h4>
+                            <span class="card-content-t">Experiencia con IDEs o frameworks como Anaconda, Spyder, Jupyter, VSCode y otros. </span>
+                            <h4 class="card-subheader-t">Programas de BI</h4>
+                            <span class="card-content-t">Experiencia con Tableau y Excel.</span>
+                        </div>
+                        <div class="card-t">
+                            <h3 class="card-header-t">Tecnologías</h3>
+                            <span class="card-content-t"></span>
+                            <h4 class="card-subheader-t">Bases de Datos</h4>
+                            <ul class="languages">
+                                <li class="language"></li>
+                                <li class="language"></li>
+                            </ul>
+                        </div>
+                        <div class="card-t">
+                            <h3 class="card-header-t">Librerías</h3>
+                            <ul class="languages">
+                                <li class="language"></li>
+                                <li class="language"></li>
+                                <li class="language"></li>
+                                <li class="language"></li>
+                                <li class="language"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- PROJECTS -->
+            <section id="projects">
+                <div class="carousel">
+                    <!-- Template for adding and displaying projects in the carousel -->
+                    <div class="carousel-item">
+                        <img class="carousel-img" src="" alt="" />
+                        <div class="project-footer">
+                            <h5 class="project-name"></h5>
+                            <p class="project-desc"></p>
+                        </div>
+                    </div>
+                    <!-- EOWYN: Aditional projects may be added by copying and pasting the div above -->
+                </div>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <p class="footer-text">© 2024 Mi Portfolio</p>
+        </footer>
     </body>
+    <!-- S.D.G. -->
 </html>

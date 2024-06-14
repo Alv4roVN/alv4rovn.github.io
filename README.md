@@ -11,3 +11,10 @@ Este repositorio contiene los archivos relativos a mi página web personal. La p
 * Formulario de contacto funcional.
 
 Todo esto se ha hecho utilizando el framework de Bootstrap para HTML, CSS y algunos scripts de Javascript.
+
+## TO-DO:
+
+* Añadir imágenes de sociales (GitHub, LinkedIn, Codecademy, Descargas)
+* Añadir imagen de perfil.
+* Añadir imágenes de proyectos.
+* Función para cambiar de idioma.
