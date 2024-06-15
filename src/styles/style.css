@@ -1,0 +1,68 @@
+body {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+/* Barra de navegación */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50px;
+    overflow: hidden;
+    background-color: cadetblue;
+    align-content: center;
+}
+
+.nav-options {
+    display: inline;
+}
+
+.nav-item {
+    display: inline;
+    margin-right: 2%;
+}
+
+.nav-item a {
+    color: antiquewhite;
+}
+
+.language-buttons {
+    display: inline;
+    position: absolute;
+    right: 1em;
+}
+
+.nav-logo {
+    display: inline;
+}
+
+.web-logo {
+    margin-left: 2em;
+    border-radius: 10px;
+    height: 2em;
+    width: auto;
+}
+
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* About me */
+.social-icon {
+    height: 2.4em;
+    width: auto;
+}
+
+
+/* Stack */
+.logo-uni {
+    height: 3.6em;
+    width: auto;
+}
