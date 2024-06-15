@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Álvaro Vilela Nova</title>
+        <link rel="stylesheet" href="..\src\styles\style.css" />
     </head>
     <body>
         <!-- NAVIGATION BAR -->
@@ -14,7 +15,7 @@
                 <li class="nav-item" ><a href="#aboutMe">Sobre mí</a></li>
                 <li class="nav-item dropdown"><a href="#stack">Habilidades</a></li>
                 <li class="nav-item"><a href="#projects">Proyectos</a></li>
-                <li class="nav-item"><a href="pages/contact.html">Contacta</a></li>
+                <li class="nav-item"><a href="..\src\pages\contact.html">Contacta</a></li>
             </ul>
             <!-- YODA: Write changeLanguage -->
             <button class="language-button" onclick="changeLanguage('es')">Español</button>
@@ -29,16 +30,20 @@
             <!-- ABOUT ME -->
             <section id="aboutMe">
                 <!-- YODA: Add profile pic -->
-                <img class="profile-pic" src="" alt="Foto de perfil" />
-                <h2 class="header-about-me">Sobre mí.</h2>
-                <p class="about-me-desc">Soy un matemático completando un Máster en Big Data, Data Science & IA en Madrid. Tengo interés en las nuevas tecnologías y siempre intento aprender por mi cuenta —por ejemplo, aprender a hacer esta página. Amante de los juegos de estrategia y todas las cosas frikis que puedas imaginarte.</p>
-                <!-- YODA: Add logos and correct links -->
-                <div class="social">
-                    <a href="" class="social-link"><img class="social-icon" src="" alt="Logo de GitHub" /></a>
-                    <a href="" class="social-link"><img class="social-icon" src="" alt="Logo de LinkedIn" /></a>
-                    <a href="" class="social-link"><img class="social-icon" src="" alt="Logo de Codecademy" /></a>
-                    <a href="" class="download-link"><img class="download-icon" src="" alt="Logo descarga CV inglés" /></a>
-                    <a href="" class="download-link"><img class="download-icon" src="" alt="Logo descarga CV español" /></a>
+                <div class="about-me-pic">
+                    <img class="profile-pic" src="" alt="Foto de perfil" />
+                </div>
+                <div class="about-me-text">
+                    <h2 class="header-about-me">Sobre mí.</h2>
+                    <p class="about-me-desc">Soy un matemático completando un Máster en Big Data, Data Science & IA en Madrid. Tengo interés en las nuevas tecnologías y siempre intento aprender por mi cuenta —por ejemplo, aprender a hacer esta página. Amante de los juegos de estrategia y todas las cosas frikis que puedas imaginarte.</p>
+                    <!-- YODA: Add logos and correct links -->
+                    <div class="social">
+                        <a href="" class="social-link"><img class="social-icon" src="" alt="Logo de GitHub" /></a>
+                        <a href="" class="social-link"><img class="social-icon" src="" alt="Logo de LinkedIn" /></a>
+                        <a href="" class="social-link"><img class="social-icon" src="" alt="Logo de Codecademy" /></a>
+                        <a href="" class="download-link"><img class="download-icon" src="" alt="Logo descarga CV inglés" /></a>
+                        <a href="" class="download-link"><img class="download-icon" src="" alt="Logo descarga CV español" /></a>
+                    </div>
                 </div>
             </section>
             <!-- HARD SKILLS -->
@@ -72,6 +77,7 @@
                 <div id="tech">
                     <h2 class="header-tech">Habilidades técnicas.</h2>
                     <div class="cards-tech">
+                        <!-- YODA: Add tech logos as list item dots, use list-style-image -->
                         <div class="card-t">
                             <h3 class="card-header-t">Lenguajes</h3>
                             <ul class="languages">
@@ -82,6 +88,7 @@
                                 <li class="language">Fortran</li>
                                 <li class="language">HTML</li>
                                 <li class="language">CSS</li>
+                                <li class="language">SQL</li>
                             </ul>
                         </div>
                         <div class="card-t">
@@ -93,21 +100,22 @@
                         </div>
                         <div class="card-t">
                             <h3 class="card-header-t">Tecnologías</h3>
-                            <span class="card-content-t"></span>
+                            <span class="card-content-t">Algoritmos de machine learning, Neural Networks (CNN, RNN, NLP), Data Mining, Azure, ETL, Pipelines, Apache Spark.</span>
                             <h4 class="card-subheader-t">Bases de Datos</h4>
                             <ul class="languages">
-                                <li class="language"></li>
-                                <li class="language"></li>
+                                <li class="language">SQL: MySQL, PostgreSQL.</li>
+                                <li class="language">MongoDB.</li>
                             </ul>
                         </div>
                         <div class="card-t">
                             <h3 class="card-header-t">Librerías</h3>
                             <ul class="languages">
-                                <li class="language"></li>
-                                <li class="language"></li>
-                                <li class="language"></li>
-                                <li class="language"></li>
-                                <li class="language"></li>
+                                <li class="language">Keras</li>
+                                <li class="language">Tensorflow</li>
+                                <li class="language">Pytorch</li>
+                                <li class="language">SKlearn</li>
+                                <li class="language">Pandas, numpy</li>
+                                <li class="language">Seaborn, Matplotlib</li>
                             </ul>
                         </div>
                     </div>
