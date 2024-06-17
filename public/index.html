@@ -12,7 +12,6 @@
     <body>
         <!-- NAVIGATION BAR -->
         <nav class="navbar">
-            <!-- YODA: Add logo image -->
             <div class="nav-logo">
                 <img src="..\src\assets\images\alvarovn.png" class="web-logo" alt="Logo de la página" />
             </div>
@@ -38,7 +37,7 @@
             <section id="aboutMe">
                 <!-- YODA: Add profile pic -->
                 <div class="about-me-pic">
-                    <img class="profile-pic" src="" alt="Foto de perfil" />
+                    <img class="profile-pic" src="..\src\assets\images\profile-pic.png" alt="Foto de perfil" />
                 </div>
                 <div class="about-me-text">
                     <h2 class="header-about-me">Sobre mí.</h2>
@@ -58,22 +57,24 @@
                 <div id="education">
                     <h2 class="header-education">Formación.</h2>
                     <div class="cards-education">
-                        <!-- YODA: Add uni logos -->
                         <div class="card-ed">
-                            <h3 class="card-header-ed"><img class="logo-uni" src="..\src\assets\logos\uex_logo.png" alt="Logo de la UEx">Universidad de Extremadura</h3>
-                            <h4 class="university">Grado en Matemáticas</h4>
+                            <img class="logo-uni" src="..\src\assets\logos\uex_logo.png" alt="Logo de la UEx">
+                            <h3 class="card-header-ed">Universidad de Extremadura</h3>
+                            <h4 class="degree">Grado en Matemáticas</h4>
                             <h4 class="duration">Sep 2018 - Jun 2024</h4>
                             <span class="card-content-ed">Formación en matemáticas puras con optativas orientadas a la estadística, machine learning y análisis de datos.</span>
                         </div>
                         <div class="card-ed">
-                            <h3 class="card-header-ed"><img class="logo-uni" src="..\src\assets\logos\ucm_logo.png" alt="Logo de la UCM">Universidad Complutense de Madrid</h3>
-                            <h4 class="university">Máster en Big Data, Data Science & IA</h4>
+                            <img class="logo-uni" src="..\src\assets\logos\ucm_logo.png" alt="Logo de la UCM">
+                            <h3 class="card-header-ed">Universidad Complutense de Madrid</h3>
+                            <h4 class="degree">Máster en Big Data, Data Science & IA</h4>
                             <h4 class="duration">Oct 2023 - Sep 2024</h4>
                             <span class="card-content-ed">Formación y proyectos relacionados en ingeniería de datos, explotación y exploración de datos y creación de modelos de machine learning e inteligencia artificial.</span>
                         </div>
                         <div class="card-ed">
-                            <h3 class="card-header-ed"><img class="logo-uni" src="..\src\assets\logos\uzg_logo.png" alt="Logo de la UZG">Universidad de Zielona Góra</h3>
-                            <h4 class="university">Grado en Matemáticas</h4>
+                            <img class="logo-uni" src="..\src\assets\logos\uzg_logo.png" alt="Logo de la UZG">
+                            <h3 class="card-header-ed">Universidad de Zielona Góra</h3>
+                            <h4 class="degree">Grado en Matemáticas</h4>
                             <h4 class="duration">Sep 2020- Jun 2021</h4>
                             <span class="card-content-ed">Beca Erasmus+ de 10 meses de educación e inmersión cultural en Polonia con compañeros de diversos trasfondos culturales.</span>
                         </div>
@@ -146,6 +147,24 @@
         <footer>
             <p class="footer-text">© 2024 Mi Portfolio</p>
         </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const cards = document.querySelectorAll('.card-ed');
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                }, {
+                    threshold: 0.1
+                });
+        
+                cards.forEach(card => {
+                    observer.observe(card);
+                });
+            });
+        </script>
     </body>
     <!-- S.D.G. -->
 </html>

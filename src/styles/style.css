@@ -12,30 +12,16 @@ nav {
     min-height: 50px;
     overflow: hidden;
     background-color: cadetblue;
-    align-content: center;
-}
-
-.nav-options {
-    display: inline;
-}
-
-.nav-item {
-    display: inline;
-    margin-right: 2%;
-}
-
-.nav-item a {
-    color: antiquewhite;
-}
-
-.language-buttons {
-    display: inline;
-    position: absolute;
-    right: 1em;
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+    z-index: 1000;
+    box-sizing: border-box;
 }
 
 .nav-logo {
-    display: inline;
+    display: flex;
+    align-items: center;
 }
 
 .web-logo {
@@ -45,7 +31,39 @@ nav {
     width: auto;
 }
 
+.nav-options {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
 
+.nav-item {
+    margin-right: 5%;
+    white-space: nowrap;
+    display: inline-flex;
+}
+
+.nav-item a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.language-buttons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.language-button {
+    margin-left: 0.5em;
+    background-color: cadetblue;
+    border: none;
+    color: antiquewhite;
+    cursor: pointer;
+    padding: 0.5em;
+    flex-shrink: 0;
+}
 
 /* Header */
 header {
@@ -53,15 +71,82 @@ header {
     justify-content: center;
 }
 
+/* About me section */
+#aboutMe {
+    display: grid;
+    grid-template-columns: 10em 1fr;
+    grid-template-rows: auto auto;
+    gap: 2em;
+    padding: 2em;
+}
 
-/* About me */
-.social-icon {
+.about-me-pic {
+    grid-row: 1 / span 2;
+}
+
+.profile-pic {
+    width: 10em;
+    height: auto;
+    border-radius: 50%;
+}
+
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.about-me-desc {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.social {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.social-link,
+.download-link {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon,
+.download-icon {
     height: 2.4em;
     width: auto;
 }
 
-
 /* Stack */
+#stack {
+    padding: 2em;
+}
+
+.cards-education {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 1em;
+}
+
+.card-ed {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card-ed.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .logo-uni {
     height: 3.6em;
     width: auto;
