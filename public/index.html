@@ -146,24 +146,7 @@
         <footer>
             <p class="footer-text">© 2024 Mi Portfolio</p>
         </footer>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const cards = document.querySelectorAll('.card-ed');
-                const observer = new IntersectionObserver(entries => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('visible');
-                        }
-                    });
-                }, {
-                    threshold: 0.1
-                });
-        
-                cards.forEach(card => {
-                    observer.observe(card);
-                });
-            });
-        </script>
+        <script src="..\src\script.js"></script>
     </body>
     <!-- S.D.G. -->
 </html>
