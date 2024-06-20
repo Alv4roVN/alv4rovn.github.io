@@ -74,7 +74,7 @@ header {
 /* About me section */
 #aboutMe {
     display: grid;
-    grid-template-columns: 10em 1fr;
+    grid-template-columns: 15em 1fr;
     grid-template-rows: auto auto;
     gap: 2em;
     padding: 2em;
@@ -85,7 +85,7 @@ header {
 }
 
 .profile-pic {
-    width: 10em;
+    width: 15em;
     height: auto;
     border-radius: 50%;
 }
@@ -121,14 +121,14 @@ header {
     width: auto;
 }
 
-/* Stack */
+/* Education */
 #stack {
     padding: 2em;
 }
 
 .cards-education {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 1em;
 }
 
@@ -147,7 +147,137 @@ header {
     transform: translateY(0);
 }
 
+.card-header-ed {
+    display: grid;
+    grid-template-columns: 4em 1fr;
+    grid-template-rows: auto;
+    gap: 0.2em;
+}
+
+.card-header-text {
+    grid-column: 2;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: inline;
+}
+
 .logo-uni {
-    height: 3.6em;
+    height: 4em;
     width: auto;
+    grid-column: 1;
+}
+
+.duration {
+    margin-top: 0;
+}
+
+
+/* Tech */
+.cards-tech {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.card-t {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card-t.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.languages {
+    padding-left: 20px;
+}
+
+.language {
+	margin: 0;
+	padding: 0.5em 0px 0.5em 2.1em;
+	list-style: none;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 1.5em;
+}
+
+.python {
+    background-image: url("../assets/logos/python_logo.png");
+}
+
+.javascript {
+    background-image: url("../assets/logos/javascript_logo.png");
+}
+
+.R {
+    background-image: url("../assets/logos/R_logo.png");
+}
+
+.matlab {
+    background-image: url("../assets/logos/matlab_logo.png");
+}
+
+.fortran {
+    background-image: url("../assets/logos/fortran_logo.png");
+}
+
+.html {
+    background-image: url("../assets/logos/html5_logo.png");
+}
+
+.css {
+    background-image: url("../assets/logos/css_logo.png");
+}
+
+.sql {
+    background-image: url("../assets/logos/sql_logo.png");
+}
+
+.keras {
+    background-image: url("../assets/logos/keras_logo.png");
+}
+
+.tensorflow {
+    background-image: url("../assets/logos/Tensorflow_logo.webp");
+}
+
+.pytorch {
+    background-image: url("../assets/logos/pytorch_logo.png");
+}
+
+.sklearn {
+    background-image: url("../assets/logos/sklearn_logo.png");
+}
+
+.pandas {
+    background-image: url("../assets/logos/pandas_logo.png");
+}
+
+.numpy {
+    background-image: url("../assets/logos/NumPy_logo.png");
+}
+
+.seaborn {
+    background-image: url("../assets/logos/seaborn_logo.png");
+}
+
+
+
+footer {
+    width: 100%;
+    min-height: 50px;
+    overflow: hidden;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+    z-index: 1000;
+    box-sizing: border-box;
 }
