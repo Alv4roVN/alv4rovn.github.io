@@ -5,16 +5,21 @@ Este repositorio contiene los archivos relativos a mi página web personal. La p
 * Barra de navegación.
 * Funcionalidad para cambiar de idioma.
 * Distintas secciones.
-* Enlaces y capacidad para descargar archivos.
+* Enlaces y descargas de archivos.
 * Animaciones.
 * Galería con controles y detalles.
-* Formulario de contacto funcional.
 
-Todo esto se ha hecho utilizando el framework de Bootstrap para HTML, CSS y algunos scripts de Javascript.
+Todo esto se ha hecho utilizando el HTML, CSS y algunos scripts de Javascript.
 
-## TO-DO:
+# Personal Website
 
-* Añadir imágenes de sociales (GitHub, LinkedIn, Codecademy, Descargas)
-* Añadir imagen de perfil.
-* Añadir imágenes de proyectos.
-* Función para cambiar de idioma.
+This repository contains the files related to my personal website. The website includes the following features:
+
+* Navigation bar.
+* Language switch functionality.
+* Various sections.
+* Links and file downloads.
+* Animations.
+* Carousel with controls and details.
+
+All of this has been created using HTML, CSS, and some JavaScript scripts.
