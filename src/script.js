@@ -31,3 +31,24 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(card);
     });
 });
+
+let currentIndex = 0;
+
+function showCarouselItem(index) {
+    const items = document.querySelectorAll('.carousel-item');
+     if (index >= items.length) currentIndex = 0;
+    if (index < 0) currentIndex = items.length - 1;
+
+    items.forEach((item, i) => {
+        item.style.display = i === currentIndex ? 'block' : 'none';
+    });
+}
+
+function moveCarousel(step) {
+    currentIndex += step;
+    showCarouselItem(currentIndex);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    showCarouselItem(currentIndex);
+});
