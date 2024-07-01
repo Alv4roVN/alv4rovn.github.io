@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Álvaro Vilela Nova</title>
+        <link rel="stylesheet" href="../styles/style_tableau.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="..\assets\images\alvarovn.png" class="web-logo" alt="Logo de la página" />
+            </div>
+            <ul class="nav-options">
+                <li class="nav-item" ><a href="../../public/index_en.html">Home</a></li>
+            </ul>
+            <!-- YODA: Write changeLanguage -->
+            <div class="language-buttons">
+                <a href="./tableau_dashboard.html" class="language-button nav-item">Español</a>
+                <a href="./tableau_dashboard_en.html" class="language-button nav-item">English</a>
+            </div>
+        </nav>
+        <!-- HEADER OF THE PAGE - Should be an introduction -->
+        <header>
+            <h1 class="welcome">Dashboard de BI en Tableau</h1>
+        </header>
+        <!-- MAIN CONTENT OF THE WEBSITE -->
+        <main>
+            <section id="explanation">
+                <p>This project involves the creation of a Business Intelligence (BI) dashboard using Tableau, designed to analyze and visualize a fictitious dataset on loans and credit. The dashboard is structured to offer a detailed and dynamic view of the data, allowing users to interact and filter key information with ease.</p>
+                <br>
+                <h2>Key Components of the Dashboard:</h2>
+                <h3>Descriptive Data Bar</h3>
+                <p>The top part of the dashboard presents a bar with essential descriptive data, providing a quick view of key metrics. Data such as: the total value of all loans; the maximum and minimum values of our loans; the average value of filtered loans and the average of all loans; the total number of businesses that have received loans and the total number of loans repaid.</p>
+                <h3>Interactive Map</h3>
+                <p>An interactive map that highlights the geographical distribution of loans. Countries can be selected directly on the map, and this selection acts as a filter, automatically updating all other components of the dashboard to reflect data specific to the selected country.</p>
+                <h3>Accumulated Area Chart</h3>
+                <p>An area chart shows the accumulated value of loans or credit in each country over time. This chart allows for the identification of trends and growth patterns in different regions. Users can choose to switch this chart to a trend line view for an alternative perspective.</p>
+                <h3>Representation of Individual Loans</h3>
+                <p>Each individual loan is represented as a point, with the color of each point indicating the loan's value relative to the average. This component visualizes the distribution of loan values, making it easy to identify loans with unusually high or low values.</p>
+                <h3>Filter and Control Bar</h3>
+                <p>A filter and control bar provides users with tools to customize their view of the dashboard using the following filters:</p>
+                <ul>
+                    <li>Country selection.</li>
+                    <li>Date range for the displayed data.</li>
+                    <li>Minimum loan value.</li>
+                    <li>A filter that works as an option to select which type of chart will represent the accumulated loan values by country.</li>
+                </ul>
+                <br>
+                <p>This dashboard is interactive within the web page. You can play with it and test its functionality. Keep in mind this dashboard was built for a course done in Spanish, so the data is entirely in Spanish. The functionality remains the same though!</p>
+                <br>
+            </section>
+            <section>
+                <div class='tableauPlaceholder' id='viz1719869788463' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;al&#47;alvaro_vilela&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='alvaro_vilela&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;al&#47;alvaro_vilela&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1719869788463');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1920px';vizElement.style.height='1107px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1920px';vizElement.style.height='1107px';} else { vizElement.style.width='100%';vizElement.style.height='2177px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <p class="footer-text">© 2024 My Portfolio</p>
+        </footer>
+        <!-- SCRIPTS -->
+        <script src="..\src\script.js"></script>
+    </body>
+    <!-- S.D.G. -->
+</html>

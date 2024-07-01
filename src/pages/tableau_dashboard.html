@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Álvaro Vilela Nova</title>
+        <link rel="stylesheet" href="../styles/style_tableau.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="..\assets\images\alvarovn.png" class="web-logo" alt="Logo de la página" />
+            </div>
+            <ul class="nav-options">
+                <li class="nav-item" ><a href="../../public/index.html">Home</a></li>
+            </ul>
+            <!-- YODA: Write changeLanguage -->
+            <div class="language-buttons">
+                <a href="./tableau_dashboard.html" class="language-button nav-item">Español</a>
+                <a href="./tableau_dashboard_en.html" class="language-button nav-item">English</a>
+            </div>
+        </nav>
+        <!-- HEADER OF THE PAGE - Should be an introduction -->
+        <header>
+            <h1 class="welcome">Dashboard de BI en Tableau</h1>
+        </header>
+        <!-- MAIN CONTENT OF THE WEBSITE -->
+        <main>
+            <section id="explanation">
+                <p>Este proyecto consiste en la creación de una dashboard de Business Intelligence (BI) utilizando Tableau, diseñada para analizar y visualizar un set de datos ficticio sobre préstamos y crédito. La dashboard está estructurada para ofrecer una visión detallada y dinámica de los datos, permitiendo a los usuarios interactuar y filtrar información clave con facilidad.</p>
+                <br>
+                <h2>Componentes clave de la dashboard:</h2>
+                <h3>Barra de Datos Descriptivos</h3>
+                <p>La parte superior de la dashboard presenta una barra con datos descriptivos esenciales, proporcionando una visión rápida de las métricas clave. Datos como: el valor acumulado por todos los préstamos; el valor máximo y mínimo de nuestros préstamos; el promedio de valor de los prestamos filtrados y el promedio de todos los préstamos; el total de comercios al que se ha dado préstamos y el total de prestamos devueltos.</p>
+                <h3>Mapa Interactivo</h3>
+                <p>Un mapa interactivo que destaca la distribución geográfica de los préstamos. Los países se pueden seleccionar directamente en el mapa, y esta selección actúa como un filtro, actualizando automáticamente todos los demás componentes de la dashboard para reflejar los datos específicos del país seleccionado.</p>
+                <h3>Grádico de Áreas Acumuladas</h3>
+                <p>Un gráfico de áreas muestra el valor acumulado de los préstamos o crédito en cada país a lo largo del tiempo. Este gráfico permite identificar tendencias y patrones de crecimiento en diferentes regiones. Los usuarios pueden optar por cambiar este gráfico a una vista de líneas de tendencia para una perspectiva alternativa.</p>
+                <h3>Representación de Préstamos Individuales</h3>
+                <p>Cada préstamo individual está representado como un punto, con el color de cada punto indicando el valor del préstamo con respecto al promedio. Este componente visualiza la distribución de los valores de los préstamos, facilitando la identificación de préstamos con valores inusualmente altos o bajos.</p>
+                <h3>Barra de Filtros y Controles</h3>
+                <p>Una barra de filtros y controles proporciona a los usuarios herramientas para personalizar su vista de la dashboard usando los siguientes filtros:</p>
+                <ul>
+                    <li>Selección de pais.</li>
+                    <li>Rango de fechas para los datos mostrados.</li>
+                    <li>Valor mínimo del préstamo.</li>
+                    <li>Un filtro que funciona como opción para seleccionar que tipo de gráfico representará los valores acumulados de préstamos por pais.</li>
+                </ul>
+                <br>
+                <p>Esta dashboard es interactiva dentro de la página web. Puedes jugar con ella y probar su funcionalidad.</p>
+                <br>
+            </section>
+            <section>
+                <div class='tableauPlaceholder' id='viz1719869788463' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;al&#47;alvaro_vilela&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='alvaro_vilela&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;al&#47;alvaro_vilela&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1719869788463');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1920px';vizElement.style.height='1107px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1920px';vizElement.style.height='1107px';} else { vizElement.style.width='100%';vizElement.style.height='2177px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <p class="footer-text">© 2024 Mi Portfolio</p>
+        </footer>
+        <!-- SCRIPTS -->
+        <script src="..\src\script.js"></script>
+    </body>
+    <!-- S.D.G. -->
+</html>

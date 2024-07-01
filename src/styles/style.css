@@ -312,8 +312,15 @@ header {
     background-image: url("../assets/logos/bootstrap_logo.png");
 }
 
+.C {
+    background-image: url("../assets/logos/C_logo.png");
+}
 
 /* Carousel Styles */
+#projects {
+    padding: 2em;
+}
+
 .carousel {
     position: relative;
     max-width: 70%;
