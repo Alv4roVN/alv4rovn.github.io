@@ -1,6 +1,25 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --card-bg: #f0f0f0;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --muted-text: #555555;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #e8e8e8;
+    --card-bg: #262626;
+    --card-shadow: rgba(0, 0, 0, 0.5);
+    --muted-text: #aaaaaa;
+}
+
 body {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     margin-top: 50px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Barra de navegación */
@@ -64,6 +83,37 @@ nav {
     cursor: pointer;
     padding: 0.5em;
     flex-shrink: 0;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2em;
+    height: 2.2em;
+    border-radius: 50%;
+    border: 1.5px solid antiquewhite;
+    background-color: transparent;
+    color: antiquewhite;
+    font-size: 1em;
+    line-height: 1;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px) scale(1.05);
+}
+
+.theme-toggle::before {
+    content: "🌙";
+}
+
+[data-theme="dark"] .theme-toggle::before {
+    content: "☀️";
 }
 
 /* Header */
@@ -198,6 +248,10 @@ header {
     background-color: rgba(95, 158, 160, 0.12);
 }
 
+[data-theme="dark"] .cv-download--es .download-icon {
+    filter: invert(1);
+}
+
 /* Work experience */
 #experience {
     padding: 2em;
@@ -210,10 +264,10 @@ header {
 }
 
 .card-exp {
-    background-color: #f0f0f0;
+    background-color: var(--card-bg);
     border-radius: 8px;
     padding: 1em 1.5em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--card-shadow);
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
@@ -247,6 +301,10 @@ header {
     grid-column: 1;
 }
 
+[data-theme="dark"] .logo-solute {
+    filter: invert(1) brightness(1.6);
+}
+
 .role {
     margin: 0;
     font-weight: 600;
@@ -264,7 +322,7 @@ header {
 .location-exp {
     display: block;
     font-size: 0.9em;
-    color: #555;
+    color: var(--muted-text);
 }
 
 .exp-bullet {
@@ -284,10 +342,10 @@ header {
 }
 
 .card-ed {
-    background-color: #f0f0f0;
+    background-color: var(--card-bg);
     border-radius: 8px;
     padding: 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--card-shadow);
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
@@ -318,6 +376,12 @@ header {
     grid-column: 1;
 }
 
+[data-theme="dark"] .logo-ucm {
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 2px;
+}
+
 .duration {
     margin-top: 0;
 }
@@ -332,10 +396,10 @@ header {
 }
 
 .card-t {
-    background-color: #f0f0f0;
+    background-color: var(--card-bg);
     border-radius: 8px;
     padding: 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--card-shadow);
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
@@ -425,6 +489,10 @@ header {
 
 .aws {
     background-image: url("../assets/logos/aws_logo.svg");
+}
+
+[data-theme="dark"] .aws {
+    background-image: url("../assets/logos/aws_logo_dark.svg");
 }
 
 .docker {

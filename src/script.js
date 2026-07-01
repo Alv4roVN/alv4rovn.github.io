@@ -35,3 +35,15 @@ function moveCarousel(step) {
 document.addEventListener('DOMContentLoaded', () => {
     showCarouselItem(currentIndex);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.getElementById('theme-toggle');
+    if (!toggle) return;
+
+    toggle.addEventListener('click', () => {
+        const root = document.documentElement;
+        const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+    });
+});

@@ -4,6 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Álvaro Vilela Nova</title>
+        <script>
+            (function () {
+                var stored = localStorage.getItem('theme');
+                var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                document.documentElement.setAttribute('data-theme', theme);
+            })();
+        </script>
         <link rel="stylesheet" href="../src/styles/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,6 +32,7 @@
                 <a href="./index.html" class="language-button nav-item">Español</a>
                 <a href="./index_en.html" class="language-button nav-item">English</a>
             </div>
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode"></button>
         </nav>
         <!-- HEADER OF THE PAGE - Should be an introduction -->
         <header>
@@ -76,7 +84,7 @@
                     <div class="card-exp">
                         <div class="card-header-exp">
                             <div class="card-header-exp-left">
-                                <img class="logo-company" src="../src/assets/logos/solute_logo.png" alt="SOLUTE Logo">
+                                <img class="logo-company logo-solute" src="../src/assets/logos/solute_logo.png" alt="SOLUTE Logo">
                                 <div class="card-header-text">
                                     <h3>SOLUTE</h3>
                                     <h4 class="role">Data Scientist</h4>
@@ -118,7 +126,7 @@
                         </div>
                         <div class="card-ed">
                             <div class="card-header-ed">
-                                <img class="logo-uni" src="../src/assets/logos/ucm_logo.png" alt="UCM Logo">
+                                <img class="logo-uni logo-ucm" src="../src/assets/logos/ucm_logo.png" alt="UCM Logo">
                                 <div class="card-header-text">
                                     <h3>Complutense University of Madrid</h3>
                                     <h4 class="degree">Master's in Big Data, Data Science & AI</h4>
