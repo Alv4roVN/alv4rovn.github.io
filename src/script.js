@@ -47,3 +47,25 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('theme', next);
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.getElementById('nav-toggle');
+    const navCollapsible = document.getElementById('nav-collapsible');
+    if (!navToggle || !navCollapsible) return;
+
+    const closeMenu = () => {
+        navToggle.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navCollapsible.classList.remove('open');
+    };
+
+    navToggle.addEventListener('click', () => {
+        const isOpen = navCollapsible.classList.toggle('open');
+        navToggle.classList.toggle('open', isOpen);
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    navCollapsible.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+});

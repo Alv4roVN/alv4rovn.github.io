@@ -22,17 +22,22 @@
             <div class="nav-logo">
                 <img src="../src/assets/images/alvarovn.png" class="web-logo" alt="Website Logo" />
             </div>
-            <ul class="nav-options">
-                <li class="nav-item"><a href="#aboutMe">About me</a></li>
-                <li class="nav-item"><a href="#experience">Experience</a></li>
-                <li class="nav-item dropdown"><a href="#stack">Skills</a></li>
-                <li class="nav-item"><a href="#projects">Projects</a></li>
-            </ul>
-            <div class="language-buttons">
-                <a href="./index.html" class="language-button nav-item">Español</a>
-                <a href="./index_en.html" class="language-button nav-item">English</a>
+            <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-collapsible">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-collapsible" id="nav-collapsible">
+                <ul class="nav-options">
+                    <li class="nav-item"><a href="#aboutMe">About me</a></li>
+                    <li class="nav-item"><a href="#experience">Experience</a></li>
+                    <li class="nav-item dropdown"><a href="#stack">Skills</a></li>
+                    <li class="nav-item"><a href="#projects">Projects</a></li>
+                </ul>
+                <div class="language-buttons">
+                    <a href="./index.html" class="language-button nav-item">Español</a>
+                    <a href="./index_en.html" class="language-button nav-item">English</a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode"></button>
             </div>
-            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode"></button>
         </nav>
         <!-- HEADER OF THE PAGE - Should be an introduction -->
         <header>

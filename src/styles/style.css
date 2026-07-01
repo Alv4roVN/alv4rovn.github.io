@@ -51,6 +51,50 @@ nav {
     width: auto;
 }
 
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 2.2em;
+    height: 2.2em;
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 1.4em;
+    height: 2px;
+    background-color: antiquewhite;
+    border-radius: 2px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-toggle.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.nav-collapsible {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    flex: 1;
+    min-width: 0;
+}
+
 .nav-options {
     display: flex;
     align-items: center;
@@ -336,7 +380,7 @@ header {
 
 .cards-education {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1em;
     align-items: start;
 }
@@ -390,7 +434,7 @@ header {
 /* Tech */
 .cards-tech {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1em;
     align-items: start;
 }
@@ -581,4 +625,62 @@ footer {
     padding: 0 1em;
     z-index: 1000;
     box-sizing: border-box;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-collapsible {
+        display: none;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2em;
+        background-color: cadetblue;
+        padding: 1.5em;
+        box-sizing: border-box;
+        max-height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+
+    .nav-collapsible.open {
+        display: flex;
+    }
+
+    .nav-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+        margin-right: 0;
+    }
+
+    .language-buttons {
+        margin-left: 0;
+    }
+
+    #aboutMe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5em 1em;
+    }
+
+    .profile-pic {
+        width: 10em;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .carousel {
+        max-width: 95%;
+    }
 }
