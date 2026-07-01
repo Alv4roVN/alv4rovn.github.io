@@ -197,6 +197,79 @@ header {
     background-color: rgba(95, 158, 160, 0.12);
 }
 
+/* Work experience */
+#experience {
+    padding: 2em;
+}
+
+.cards-experience {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.card-exp {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 1em 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card-exp.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-header-exp {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.card-header-exp-left {
+    display: grid;
+    grid-template-columns: 3.5em 1fr;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.logo-company {
+    height: 3em;
+    width: 3em;
+    object-fit: contain;
+    grid-column: 1;
+}
+
+.role {
+    margin: 0;
+    font-weight: 600;
+}
+
+.exp-meta {
+    text-align: right;
+}
+
+.duration-exp {
+    display: block;
+    font-weight: 600;
+}
+
+.location-exp {
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.exp-bullet {
+    margin-bottom: 0.5em;
+}
+
 /* Education */
 #stack {
     padding: 2em;

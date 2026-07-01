@@ -17,6 +17,7 @@
             </div>
             <ul class="nav-options">
                 <li class="nav-item" ><a href="#aboutMe">Sobre mí</a></li>
+                <li class="nav-item"><a href="#experience">Experiencia</a></li>
                 <li class="nav-item dropdown"><a href="#stack">Habilidades</a></li>
                 <li class="nav-item"><a href="#projects">Proyectos</a></li>
             </ul>
@@ -49,6 +50,52 @@
                     <a href="..\downloads\alvaro-vilela-nova-cv-es.pdf" target="_blank" download="alvaro-vilela-nova-cv-es.pdf" class="cv-download cv-download--es"><img class="download-icon" src="..\src\assets\logos\download_cv.png" alt="Icono descarga CV" /><span class="cv-download-label">CV · ES</span></a>
                 </div>
             </section>
+            <!-- WORK EXPERIENCE -->
+            <section id="experience">
+                <h2 class="header-experience">Experiencia laboral.</h2>
+                <div class="cards-experience">
+                    <div class="card-exp">
+                        <div class="card-header-exp">
+                            <div class="card-header-exp-left">
+                                <img class="logo-company" src="..\src\assets\logos\multiverse_logo.png" alt="Logo de Multiverse Computing">
+                                <div class="card-header-text">
+                                    <h3>Multiverse Computing</h3>
+                                    <h4 class="role">ML Engineer</h4>
+                                </div>
+                            </div>
+                            <div class="exp-meta">
+                                <span class="duration-exp">Diciembre 2025 – Actualidad</span>
+                                <span class="location-exp">Zaragoza, España</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="exp-bullet">Desarrollo y despliegue end-to-end de un sistema RAG agéntico legal-aware con LangGraph y Elasticsearch, ingiriendo documentación fiscal en chunks jerárquicos con metadatos de artículos, subartículos y secciones.</li>
+                            <li class="exp-bullet">Diseño completo de la pipeline de evaluación RAG mediante LLM-as-a-judge y métricas deterministas, priorizando groundedness y correctness para minimizar respuestas no respaldadas por la documentación.</li>
+                            <li class="exp-bullet">Despliegue de la aplicación para cliente en AWS mediante EC2, Docker, FastAPI y PostgreSQL, accesible a través de VPN restringida por whitelist y apoyada por una pipeline CI/CD con tests y entornos reproducibles.</li>
+                        </ul>
+                    </div>
+                    <div class="card-exp">
+                        <div class="card-header-exp">
+                            <div class="card-header-exp-left">
+                                <img class="logo-company" src="..\src\assets\logos\solute_logo.png" alt="Logo de SOLUTE">
+                                <div class="card-header-text">
+                                    <h3>SOLUTE</h3>
+                                    <h4 class="role">Data Scientist</h4>
+                                </div>
+                            </div>
+                            <div class="exp-meta">
+                                <span class="duration-exp">Agosto 2024 – Diciembre 2025</span>
+                                <span class="location-exp">Badajoz, España</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="exp-bullet">Desarrollo y despliegue de modelos de forecasting energético en Python con PyTorch, scikit-learn y TensorFlow para subastas day-ahead, intradiarias y predicción Almost Real-Time de demanda eléctrica, con mejoras de MAE de hasta el 10–20% frente a alternativas de mercado.</li>
+                            <li class="exp-bullet">Recolección, limpieza y procesamiento de datos con Pandas, NumPy, APIs externas y BeautifulSoup, con pipelines orquestados mediante Airflow combinando datos meteorológicos geoespaciales y series temporales.</li>
+                            <li class="exp-bullet">Desarrollo de un sistema de Computer Vision en tiempo real con YOLO, OpenCV y visión estéreo para detectar aves en parques eólicos y estimar distancias superiores a 450 m.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
             <!-- HARD SKILLS -->
             <section id="stack">
                 <!-- EDUCATION -->
@@ -64,10 +111,10 @@
                                 </div>
                             </div>
                             <h4 class="duration">Jun 2024</h4>
-                            <span>Formación en las principales ramas de las matemáticas. Optativas relacionadas con estadística y machine learning.</span>
+                            <span>Formación troncal en matemáticas, con optativas en estadística y machine learning.</span>
                             <ul>
-                                <li>Excelentes calificaciones y matrículas de honor (>9.0/10): Estadística, Álgebra Lineal, Cálculo, Métodos Computacionales, Geometría, Informática, Aprendizaje Automático, Muestreo Estadístico, Modelos Lineales, Geometría Riemanniana, Modelado de Series Temporales, Variables Complejas, Métodos Numéricos, Estadística Matemática, Ecuaciones Diferenciales, Topología Avanzada.</li>
-                                <li>Miembro del Club de Debate de la universidad. Participé en proyectos de observación y medición de la actividad solar usando equipamiento especializado en colaboración con la Facultad de Ciencias.</li>
+                                <li>Matrícula de honor y excelentes calificaciones (>9.0/10) en Estadística, Álgebra Lineal, Aprendizaje Automático, Métodos Numéricos y Ecuaciones Diferenciales, entre otras asignaturas troncales de matemáticas.</li>
+                                <li>Miembro del Club de Debate de la universidad; participé en proyectos de observación y medición de la actividad solar usando equipamiento especializado en colaboración con la Facultad de Ciencias.</li>
                             </ul>
                         </div>
                         <div class="card-ed">
@@ -79,10 +126,10 @@
                                 </div>
                             </div>
                             <h4 class="duration">Sep 2024</h4>
-                            <span>Formación y proyectos relacionados en ingeniería de datos, explotación y exploración de datos y creación de modelos de machine learning e inteligencia artificial.</span>
+                            <span>Formación y proyectos aplicados en machine learning, deep learning y desarrollo de modelos de IA.</span>
                             <ul>
-                                <li>Notas excelentes (>9.0/10): BBDD SQL y NoSQL, Programación en Python, BI con Tableau, Estadística, Data Mining y Modelado Predictivo, Machine Learning, Hadoop/Spark, Deep Learning.</li>
-                                <li>Proyectos completados relacionados con modelos de aprendizaje automático e inteligencia artificial, principalmente relacionados con ciencia de datos. Trabajado con bases de datos basadas en MySQL y MongoDB.</li>
+                                <li>Notas excelentes (>9.0/10) en Machine Learning, Deep Learning, Estadística y bases de datos SQL y NoSQL.</li>
+                                <li>Premio al Trabajo de Fin de Máster por una aplicación de consulta audiovisual con Speech-to-Text, RAG y LLMs.</li>
                             </ul>
                         </div>
                         <div class="card-ed">
@@ -96,7 +143,7 @@
                             <h4 class="duration">Sep 2020 - Jun 2021</h4>
                             <span>Beca Erasmus+ de 10 meses de educación e inmersión cultural en Polonia con compañeros de diversos trasfondos culturales.</span>
                             <br>
-                            <span>Asignaturas de machine learning, MATLAB y modelado de series temporales.</span>
+                            <span>Asignaturas de machine learning y modelado de series temporales.</span>
                         </div>
                     </div>
                 </div>

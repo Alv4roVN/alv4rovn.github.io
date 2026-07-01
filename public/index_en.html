@@ -17,6 +17,7 @@
             </div>
             <ul class="nav-options">
                 <li class="nav-item"><a href="#aboutMe">About me</a></li>
+                <li class="nav-item"><a href="#experience">Experience</a></li>
                 <li class="nav-item dropdown"><a href="#stack">Skills</a></li>
                 <li class="nav-item"><a href="#projects">Projects</a></li>
             </ul>
@@ -48,6 +49,52 @@
                     <a href="../downloads/alvaro-vilela-nova-cv-es.pdf" target="_blank" download="alvaro-vilela-nova-cv-es.pdf" class="cv-download cv-download--es"><img class="download-icon" src="../src/assets/logos/download_cv.png" alt="Download CV icon" /><span class="cv-download-label">CV · ES</span></a>
                 </div>
             </section>
+            <!-- WORK EXPERIENCE -->
+            <section id="experience">
+                <h2 class="header-experience">Work experience.</h2>
+                <div class="cards-experience">
+                    <div class="card-exp">
+                        <div class="card-header-exp">
+                            <div class="card-header-exp-left">
+                                <img class="logo-company" src="../src/assets/logos/multiverse_logo.png" alt="Multiverse Computing Logo">
+                                <div class="card-header-text">
+                                    <h3>Multiverse Computing</h3>
+                                    <h4 class="role">ML Engineer</h4>
+                                </div>
+                            </div>
+                            <div class="exp-meta">
+                                <span class="duration-exp">December 2025 – Present</span>
+                                <span class="location-exp">Zaragoza, Spain</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="exp-bullet">End-to-end development and deployment of a legal-aware agentic RAG system using LangGraph and Elasticsearch, ingesting tax documentation into hierarchical chunks with article, sub-article, and section metadata.</li>
+                            <li class="exp-bullet">Full design of the RAG evaluation pipeline using LLM-as-a-judge and deterministic metrics, prioritizing groundedness and correctness to minimize responses unsupported by the documentation.</li>
+                            <li class="exp-bullet">Deployment of the client application on AWS using EC2, Docker, FastAPI, and PostgreSQL, accessible via a whitelist-restricted VPN and supported by a CI/CD pipeline with tests and reproducible environments.</li>
+                        </ul>
+                    </div>
+                    <div class="card-exp">
+                        <div class="card-header-exp">
+                            <div class="card-header-exp-left">
+                                <img class="logo-company" src="../src/assets/logos/solute_logo.png" alt="SOLUTE Logo">
+                                <div class="card-header-text">
+                                    <h3>SOLUTE</h3>
+                                    <h4 class="role">Data Scientist</h4>
+                                </div>
+                            </div>
+                            <div class="exp-meta">
+                                <span class="duration-exp">August 2024 – December 2025</span>
+                                <span class="location-exp">Badajoz, Spain</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="exp-bullet">Development and deployment of energy forecasting models in Python with PyTorch, scikit-learn, and TensorFlow for day-ahead auctions, intraday auctions, and Almost Real-Time electricity demand forecasting, with MAE improvements of up to 10–20% over market alternatives.</li>
+                            <li class="exp-bullet">Data collection, cleaning, and processing with Pandas, NumPy, external APIs, and BeautifulSoup, with pipelines orchestrated using Airflow combining geospatial meteorological data and time series.</li>
+                            <li class="exp-bullet">Development of a real-time computer vision system with YOLO, OpenCV, and stereo vision to detect birds in wind farms and estimate distances exceeding 450 m.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
             <!-- HARD SKILLS -->
             <section id="stack">
                 <!-- EDUCATION -->
@@ -63,10 +110,10 @@
                                 </div>
                             </div>
                             <h4 class="duration">Jun 2024</h4>
-                            <span>Education in the main branches of mathematics. Electives related to statistics and machine learning.</span>
+                            <span>Core mathematics curriculum with electives in statistics and machine learning.</span>
                             <ul>
-                                <li>Excellent grades and honors (>9.0/10): Statistics, Linear Algebra, Calculus, Computational Methods, Geometry, Informatics, Machine Learning, Statistical Sampling, Linear Models, Riemannian Geometry, Time Series Modeling, Complex Variables, Numerical Methods, Mathematical Statistics, Differential Equations, Advanced Topology.</li>
-                                <li>Member of the university Debate Club. Participated in solar activity observation and measurement projects using specialized equipment in collaboration with the Faculty of Sciences.</li>
+                                <li>Graduated with high honors (>9.0/10) in Statistics, Linear Algebra, Machine Learning, Numerical Methods, and Differential Equations, among other core mathematics coursework.</li>
+                                <li>Member of the university Debate Club; participated in solar activity observation and measurement projects using specialized equipment in collaboration with the Faculty of Sciences.</li>
                             </ul>
                         </div>
                         <div class="card-ed">
@@ -78,10 +125,10 @@
                                 </div>
                             </div>
                             <h4 class="duration">Sep 2024</h4>
-                            <span>Training and projects related to data engineering, data exploitation and exploration, and the creation of machine learning and artificial intelligence models.</span>
+                            <span>Coursework and applied projects in machine learning, deep learning, and AI model development.</span>
                             <ul>
-                                <li>Excellent grades (>9.0/10): SQL and NoSQL Databases, Python Programming, BI with Tableau, Statistics, Data Mining and Predictive Modeling, Machine Learning, Hadoop/Spark, Deep Learning.</li>
-                                <li>Completed projects related to machine learning and artificial intelligence models, mainly related to data science. Worked with MySQL and MongoDB databases.</li>
+                                <li>Excellent grades (>9.0/10) in Machine Learning, Deep Learning, Statistics, and SQL &amp; NoSQL Databases.</li>
+                                <li>Master's Thesis Award for an audiovisual query application combining Speech-to-Text, RAG, and LLMs.</li>
                             </ul>
                         </div>
                         <div class="card-ed">
@@ -95,7 +142,7 @@
                             <h4 class="duration">Sep 2020 - Jun 2021</h4>
                             <span>Erasmus+ scholarship of 10 months of education and cultural immersion in Poland with classmates from diverse cultural backgrounds.</span>
                             <br>
-                            <span>Courses in machine learning, MATLAB, and time series modeling.</span>
+                            <span>Coursework in machine learning and time series modeling.</span>
                         </div>
                     </div>
                 </div>
