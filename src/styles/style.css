@@ -195,6 +195,8 @@ header {
     grid-column: 2;
     grid-row: 1;
     margin-bottom: 0px;
+    text-align: justify;
+    hyphens: auto;
 }
 
 .social {
@@ -371,6 +373,8 @@ header {
 
 .exp-bullet {
     margin-bottom: 0.5em;
+    text-align: justify;
+    hyphens: auto;
 }
 
 /* Education */
@@ -430,6 +434,12 @@ header {
     margin-top: 0;
 }
 
+.card-ed span,
+.card-ed li {
+    text-align: justify;
+    hyphens: auto;
+}
+
 
 /* Tech */
 .cards-tech {
@@ -469,6 +479,8 @@ header {
 
 .skill {
     margin-bottom: 0.5em;
+    text-align: justify;
+    hyphens: auto;
 }
 
 .python {
