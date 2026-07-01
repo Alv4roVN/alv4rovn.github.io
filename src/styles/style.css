@@ -116,10 +116,50 @@ header {
     align-items: center;
 }
 
-.social-icon,
-.download-icon {
+.social-icon {
     height: 2.4em;
     width: auto;
+}
+
+.cv-download {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.4em 1em 0.4em 0.6em;
+    border-radius: 999px;
+    border: 1.5px solid cadetblue;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85em;
+    letter-spacing: 0.03em;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cv-download .download-icon {
+    height: 1.4em;
+    width: auto;
+}
+
+.cv-download--en {
+    background-color: cadetblue;
+    color: antiquewhite;
+}
+
+.cv-download--en .download-icon {
+    filter: brightness(0) invert(1);
+}
+
+.cv-download--en:hover {
+    background-color: #4c7d7f;
+}
+
+.cv-download--es {
+    background-color: transparent;
+    color: cadetblue;
+}
+
+.cv-download--es:hover {
+    background-color: rgba(95, 158, 160, 0.12);
 }
 
 /* Education */
