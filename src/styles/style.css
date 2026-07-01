@@ -216,30 +216,6 @@ header {
     background-image: url("../assets/logos/python_logo.png");
 }
 
-.javascript {
-    background-image: url("../assets/logos/javascript_logo.png");
-}
-
-.R {
-    background-image: url("../assets/logos/R_logo.png");
-}
-
-.matlab {
-    background-image: url("../assets/logos/matlab_logo.png");
-}
-
-.fortran {
-    background-image: url("../assets/logos/fortran_logo.png");
-}
-
-.html {
-    background-image: url("../assets/logos/html5_logo.png");
-}
-
-.css {
-    background-image: url("../assets/logos/css_logo.png");
-}
-
 .sql {
     background-image: url("../assets/logos/sql_logo.png");
 }
@@ -276,44 +252,44 @@ header {
     background-image: url("../assets/logos/matplotlib_logo.png");
 }
 
-.mysql {
-    background-image: url("../assets/logos/mysql_logo.png");
-}
-
 .mongodb {
     background-image: url("../assets/logos/mongodb_logo.png");
 }
 
-.tableau {
-    background-image: url("../assets/logos/tableau_logo.png");
-}
-
-.excel {
-    background-image: url("../assets/logos/excel_logo.png");
-}
-
-.azure {
-    background-image: url("../assets/logos/azure_logo.png");
-}
-
-.hadoop {
-    background-image: url("../assets/logos/hadoop_logo.png");
-}
-
-.hive {
-    background-image: url("../assets/logos/hive_logo.png");
-}
-
-.pyspark {
-    background-image: url("../assets/logos/pyspark_logo.png");
-}
-
-.bootstrap {
-    background-image: url("../assets/logos/bootstrap_logo.png");
-}
-
 .C {
     background-image: url("../assets/logos/C_logo.png");
+}
+
+.langgraph {
+    background-image: url("../assets/logos/langgraph_logo.svg");
+}
+
+.llamaindex {
+    background-image: url("../assets/logos/llamaindex_logo.png");
+}
+
+.elasticsearch {
+    background-image: url("../assets/logos/elasticsearch_logo.svg");
+}
+
+.aws {
+    background-image: url("../assets/logos/aws_logo.svg");
+}
+
+.docker {
+    background-image: url("../assets/logos/docker_logo.svg");
+}
+
+.fastapi {
+    background-image: url("../assets/logos/fastapi_logo.svg");
+}
+
+.postgresql {
+    background-image: url("../assets/logos/postgresql_logo.svg");
+}
+
+.airflow {
+    background-image: url("../assets/logos/airflow_logo.svg");
 }
 
 /* Carousel Styles */
