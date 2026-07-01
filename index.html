@@ -1,1 +1,258 @@
-<meta http-equiv="refresh" content="0; url=https://alv4rovn.github.io/public/index.html">
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Álvaro Vilela Nova — ML Engineer especializado en sistemas RAG agénticos en producción, evaluación de LLMs e infraestructura de despliegue." />
+        <link rel="icon" type="image/png" href="src\assets\images\alvarovn.png" />
+        <title>Álvaro Vilela Nova</title>
+        <script>
+            (function () {
+                var stored = localStorage.getItem('theme');
+                var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                document.documentElement.setAttribute('data-theme', theme);
+            })();
+        </script>
+        <link rel="stylesheet" href="src\styles\style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="src\assets\images\alvarovn.png" class="web-logo" alt="Logo de la página" />
+            </div>
+            <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-collapsible">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-collapsible" id="nav-collapsible">
+                <ul class="nav-options">
+                    <li class="nav-item" ><a href="#aboutMe">Sobre mí</a></li>
+                    <li class="nav-item"><a href="#experience">Experiencia</a></li>
+                    <li class="nav-item"><a href="#stack">Habilidades</a></li>
+                    <li class="nav-item"><a href="#projects">Proyectos</a></li>
+                </ul>
+                <!-- YODA: Write changeLanguage -->
+                <div class="language-buttons">
+                    <a href="./" class="language-button nav-item">Español</a>
+                    <a href="./index_en.html" class="language-button nav-item">English</a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar a modo oscuro"></button>
+            </div>
+        </nav>
+        <!-- HEADER OF THE PAGE - Should be an introduction -->
+        <header>
+            <h1 class="welcome">BIENVENIDO A MI PÁGINA WEB PERSONAL</h1>
+        </header>
+        <!-- MAIN CONTENT OF THE WEBSITE -->
+        <main>
+            <!-- ABOUT ME -->
+            <section id="aboutMe">
+                <div class="about-me-pic">
+                    <img class="profile-pic" src="src\assets\images\profile-pic.png" alt="Foto de perfil" />
+                </div>
+                <div class="about-me-text">
+                    <h2 class="header-about-me">Sobre mí.</h2>
+                    <p class="about-me-desc">Soy matemático de formación y actualmente trabajo como ML Engineer en Multiverse Computing (Madrid), donde construyo sistemas RAG agénticos en producción, pipelines de evaluación de LLMs e infraestructura de despliegue. Me encanta sumergirme en nuevas tecnologías y soy un autodidacta entusiasta, siempre buscando aprender y desarrollar nuevas habilidades —como crear esta página. Además, soy un fanático de los juegos de estrategia y disfruto de todo lo relacionado con el mundo geek.</p>
+                    <p class="about-me-desc">Puedes contactar conmigo a través de correo electrónico o LinkedIn. También puedes descargar mi CV en inglés o español haciendo click en los enlaces de abajo. Puedes visitar mi GitHub para ver proyectos, contribuciones y saber qué estoy aprendiendo en este momento.</p>
+                </div>
+                <div class="social">
+                    <a href="https://github.com/Alv4roVN" target="_blank" class="social-link social-link--github"><img class="social-icon" src="src\assets\logos\GitHub_logo.png" alt="Logo de GitHub" /></a>
+                    <a href="https://www.linkedin.com/in/alv4rovn/" target="_blank" class="social-link social-link--linkedin"><img class="social-icon" src="src\assets\logos\linkedin_logo.png" alt="Logo de LinkedIn" /></a>
+                    <a href="downloads\alvaro-vilela-nova-cv-en.pdf" target="_blank" download="alvaro-vilela-nova-cv-en.pdf" class="cv-download cv-download--en"><img class="download-icon" src="src\assets\logos\download_cv.png" alt="Icono descarga CV" /><span class="cv-download-label">CV · EN</span></a>
+                    <a href="downloads\alvaro-vilela-nova-cv-es.pdf" target="_blank" download="alvaro-vilela-nova-cv-es.pdf" class="cv-download cv-download--es"><img class="download-icon" src="src\assets\logos\download_cv.png" alt="Icono descarga CV" /><span class="cv-download-label">CV · ES</span></a>
+                </div>
+            </section>
+            <!-- WORK EXPERIENCE -->
+            <section id="experience">
+                <h2 class="header-experience">Experiencia laboral.</h2>
+                <div class="cards-experience">
+                    <div class="card-exp">
+                        <div class="card-header-exp">
+                            <div class="card-header-exp-left">
+                                <img class="logo-company" src="src\assets\logos\multiverse_logo.png" alt="Logo de Multiverse Computing">
+                                <div class="card-header-text">
+                                    <h3>Multiverse Computing</h3>
+                                    <h4 class="role">ML Engineer</h4>
+                                </div>
+                            </div>
+                            <div class="exp-meta">
+                                <span class="duration-exp">Diciembre 2025 – Actualidad</span>
+                                <span class="location-exp">Zaragoza, España</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="exp-bullet">Desarrollo y despliegue end-to-end de un sistema RAG agéntico legal-aware con LangGraph y Elasticsearch, ingiriendo documentación fiscal en chunks jerárquicos con metadatos de artículos, subartículos y secciones.</li>
+                            <li class="exp-bullet">Diseño completo de la pipeline de evaluación RAG mediante LLM-as-a-judge y métricas deterministas, priorizando groundedness y correctness para minimizar respuestas no respaldadas por la documentación.</li>
+                            <li class="exp-bullet">Despliegue de la aplicación para cliente en AWS mediante EC2, Docker, FastAPI y PostgreSQL, accesible a través de VPN restringida por whitelist y apoyada por una pipeline CI/CD con tests y entornos reproducibles.</li>
+                        </ul>
+                    </div>
+                    <div class="card-exp">
+                        <div class="card-header-exp">
+                            <div class="card-header-exp-left">
+                                <img class="logo-company logo-solute" src="src\assets\logos\solute_logo.png" alt="Logo de SOLUTE">
+                                <div class="card-header-text">
+                                    <h3>SOLUTE</h3>
+                                    <h4 class="role">Data Scientist</h4>
+                                </div>
+                            </div>
+                            <div class="exp-meta">
+                                <span class="duration-exp">Agosto 2024 – Diciembre 2025</span>
+                                <span class="location-exp">Badajoz, España</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="exp-bullet">Desarrollo y despliegue de modelos de forecasting energético en Python con PyTorch, scikit-learn y TensorFlow para subastas day-ahead, intradiarias y predicción Almost Real-Time de demanda eléctrica, con mejoras de MAE de hasta el 10–20% frente a alternativas de mercado.</li>
+                            <li class="exp-bullet">Recolección, limpieza y procesamiento de datos con Pandas, NumPy, APIs externas y BeautifulSoup, con pipelines orquestados mediante Airflow combinando datos meteorológicos geoespaciales y series temporales.</li>
+                            <li class="exp-bullet">Desarrollo de un sistema de Computer Vision en tiempo real con YOLO, OpenCV y visión estéreo para detectar aves en parques eólicos y estimar distancias superiores a 450 m.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- HARD SKILLS -->
+            <section id="stack">
+                <!-- EDUCATION -->
+                <div id="education">
+                    <h2 class="header-education">Formación.</h2>
+                    <div class="cards-education">
+                        <div class="card-ed">
+                            <div class="card-header-ed">
+                                <img class="logo-uni" src="src\assets\logos\uex_logo.png" alt="Logo de la UEx">
+                                <div class="card-header-text">
+                                    <h3>Universidad de Extremadura</h3>
+                                    <h4 class="degree">Grado en Matemáticas</h4>
+                                </div>
+                            </div>
+                            <h4 class="duration">Jun 2024</h4>
+                            <span>Formación troncal en matemáticas, con optativas en estadística y machine learning.</span>
+                            <ul>
+                                <li>Matrícula de honor y excelentes calificaciones (>9.0/10) en Estadística, Álgebra Lineal, Aprendizaje Automático, Métodos Numéricos y Ecuaciones Diferenciales, entre otras asignaturas troncales de matemáticas.</li>
+                                <li>Miembro del Club de Debate de la universidad; participé en proyectos de observación y medición de la actividad solar usando equipamiento especializado en colaboración con la Facultad de Ciencias.</li>
+                            </ul>
+                        </div>
+                        <div class="card-ed">
+                            <div class="card-header-ed">
+                                <img class="logo-uni logo-ucm" src="src\assets\logos\ucm_logo.png" alt="Logo de la UCM">
+                                <div class="card-header-text">
+                                    <h3>Universidad Complutense de Madrid</h3>
+                                    <h4 class="degree">Máster en Big Data, Data Science & IA</h4>
+                                </div>
+                            </div>
+                            <h4 class="duration">Sep 2024</h4>
+                            <span>Formación y proyectos aplicados en machine learning, deep learning y desarrollo de modelos de IA.</span>
+                            <ul>
+                                <li>Notas excelentes (>9.0/10) en Machine Learning, Deep Learning, Estadística y bases de datos SQL y NoSQL.</li>
+                                <li>Premio al Trabajo de Fin de Máster por una aplicación de consulta audiovisual con Speech-to-Text, RAG y LLMs.</li>
+                            </ul>
+                        </div>
+                        <div class="card-ed">
+                            <div class="card-header-ed">
+                                <img class="logo-uni" src="src\assets\logos\uzg_logo.png" alt="Logo de la UZG" style="height: 3.6em; width: 3.8em;" >
+                                <div class="card-header-text">
+                                    <h3>Universidad de Zielona Góra</h3>
+                                    <h4 class="degree">Grado en Matemáticas</h4>
+                                </div>
+                            </div>
+                            <h4 class="duration">Sep 2020 - Jun 2021</h4>
+                            <span>Beca Erasmus+ de 10 meses de educación e inmersión cultural en Polonia con compañeros de diversos trasfondos culturales.</span>
+                            <br>
+                            <span>Asignaturas de machine learning y modelado de series temporales.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- TECH SKILLS -->
+                <div id="tech">
+                    <h2 class="header-tech">Habilidades técnicas.</h2>
+                    <div class="cards-tech">
+                        <div class="card-t">
+                            <h3 class="card-header-t">Lenguajes</h3>
+                            <ul class="languages">
+                                <li class="language python">Python</li>
+                                <li class="language sql">SQL</li>
+                                <li class="language C">C</li>
+                            </ul>
+                        </div>
+                        <div class="card-t">
+                            <h3 class="card-header-t">Herramientas y servicios</h3>
+                            <h4 class="card-subheader-t">Cloud e infraestructura</h4>
+                            <ul class="languages">
+                                <li class="language aws">AWS</li>
+                                <li class="language docker">Docker</li>
+                            </ul>
+                            <h4 class="card-subheader-t">Frameworks agénticos y RAG</h4>
+                            <ul class="languages">
+                                <li class="language langgraph">LangGraph</li>
+                                <li class="language llamaindex">LlamaIndex</li>
+                                <li class="language elasticsearch">Elasticsearch</li>
+                            </ul>
+                            <h4 class="card-subheader-t">Orquestación y APIs</h4>
+                            <ul class="languages">
+                                <li class="language airflow">Airflow</li>
+                                <li class="language fastapi">FastAPI</li>
+                            </ul>
+                            <h4 class="card-subheader-t">Sistemas de gestión de bases de datos</h4>
+                            <ul class="languages">
+                                <li class="language postgresql">PostgreSQL</li>
+                                <li class="language mongodb">MongoDB</li>
+                            </ul>
+                        </div>
+                        <div class="card-t">
+                            <h3 class="card-header-t">Conocimientos</h3>
+                            <ul>
+                                <li class="skill">Algoritmos de machine learning, aprendizaje supervisado y no supervisado.</li>
+                                <li class="skill">Redes neuronales multicapa, convolucionales y recurrentes.</li>
+                                <li class="skill">Sistemas RAG agénticos, LLMs y evaluación con LLM-as-a-judge.</li>
+                                <li class="skill">Despliegue de modelos y MLOps (CI/CD).</li>
+                                <li class="skill">APIs REST.</li>
+                                <li class="skill">Análisis estadístico.</li>
+                            </ul>
+                        </div>
+                        <div class="card-t">
+                            <h3 class="card-header-t">Librerías</h3>
+                            <ul class="languages">
+                                <li class="language keras">Keras</li>
+                                <li class="language tensorflow">Tensorflow</li>
+                                <li class="language pytorch">Pytorch</li>
+                                <li class="language sklearn">Scikit-Learn</li>
+                                <li class="language pandas">Pandas</li>
+                                <li class="language numpy">Numpy</li>
+                                <li class="language seaborn">Seaborn</li>
+                                <li class="language matplotlib">Matplotlib</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- PROJECTS -->
+            <section id="projects">
+                <h2>Proyectos.</h2>
+                <p>¡Haz click en la imagen para ir a la página del proyecto que te interese!</p>
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <!-- Carousel items -->
+                        <div class="carousel-item">
+                            <a href="src/pages/tableau_dashboard.html"><img class="carousel-img" src="src\assets\images\tableau_dashboard.png" alt="Project 1" /></a>
+                            <div class="project-footer">
+                                <h5 class="project-name">Dashboard de BI en Tableau</h5>
+                                <p class="project-desc">Dashboard interactivo hecho en Tableau utilizando un set de datos ficticio.</p>
+                            </div>
+                        </div>
+                        <!-- EOWYN: New carousel items may be added by copying and pasting the div above -->
+                    </div>
+                    <!-- Carousel controls -->
+                    <button class="carousel-control prev" onclick="moveCarousel(-1)">❮</button>
+                    <button class="carousel-control next" onclick="moveCarousel(1)">❯</button>
+                </div>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <p class="footer-text">© 2026 Mi Portfolio</p>
+        </footer>
+        <!-- SCRIPTS -->
+        <script src="src\script.js"></script>
+    </body>
+    <!-- S.D.G. -->
+</html>

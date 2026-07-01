@@ -160,6 +160,13 @@ nav {
     content: "☀️";
 }
 
+#aboutMe,
+#experience,
+#stack,
+#projects {
+    scroll-margin-top: 50px;
+}
+
 /* Header */
 header {
     display: flex;
