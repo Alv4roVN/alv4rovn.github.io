@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+    <defs>
+        <linearGradient id="tfm-bg-es" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#4c7d7f"/>
+            <stop offset="100%" stop-color="#1c2b2e"/>
+        </linearGradient>
+    </defs>
+    <rect width="960" height="540" fill="url(#tfm-bg-es)"/>
+
+    <text x="60" y="80" font-family="Montserrat, Arial, sans-serif" font-size="38" font-weight="700" fill="#f5f2ea">TFM &#8212; RAG Audiovisual</text>
+    <text x="60" y="115" font-family="Arial, sans-serif" font-size="19" fill="#cfe3e4">Premio TFM &#8212; Speech-to-Text + RAG + LLMs</text>
+
+    <line x1="160" y1="240" x2="800" y2="240" stroke="#cfe3e4" stroke-width="3" stroke-dasharray="2 12" stroke-linecap="round"/>
+
+    <g>
+        <circle cx="160" cy="240" r="52" fill="#f5f2ea"/>
+        <text x="160" y="258" font-size="42" text-anchor="middle">&#9654;&#65039;</text>
+        <text x="160" y="316" font-size="18" fill="#f5f2ea" text-anchor="middle" font-family="Arial, sans-serif">Audio de YouTube</text>
+    </g>
+    <g>
+        <circle cx="373" cy="240" r="52" fill="#f5f2ea"/>
+        <text x="373" y="258" font-size="38" text-anchor="middle">&#127908;</text>
+        <text x="373" y="316" font-size="18" fill="#f5f2ea" text-anchor="middle" font-family="Arial, sans-serif">Whisper STT</text>
+    </g>
+    <g>
+        <circle cx="586" cy="240" r="52" fill="#f5f2ea"/>
+        <text x="586" y="258" font-size="38" text-anchor="middle">&#128269;</text>
+        <text x="586" y="316" font-size="18" fill="#f5f2ea" text-anchor="middle" font-family="Arial, sans-serif">RAG LlamaIndex</text>
+    </g>
+    <g>
+        <circle cx="800" cy="240" r="52" fill="#f5f2ea"/>
+        <text x="800" y="258" font-size="38" text-anchor="middle">&#128172;</text>
+        <text x="800" y="316" font-size="18" fill="#f5f2ea" text-anchor="middle" font-family="Arial, sans-serif">Interfaz Streamlit</text>
+    </g>
+</svg>
